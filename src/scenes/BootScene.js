@@ -24,13 +24,12 @@ export default class BootScene extends Phaser.Scene {
     const gfx = this.make.graphics({ x: 0, y: 0, add: false });
     const textures = this.textures;
 
-    // tiny white circle for sparkles
+    // particle burst
     gfx.clear();
     gfx.fillStyle(0xffffff, 1);
     gfx.fillCircle(8, 8, 8);
     gfx.generateTexture("spark", 16, 16);
 
-    // simple shapes for theme objects
     THEMES.forEach((theme) => {
       theme.objects.forEach((obj) => {
         if (textures.exists(obj.key)) return;
@@ -72,7 +71,7 @@ export default class BootScene extends Phaser.Scene {
   createHintTextures() {
     const gfx = this.make.graphics({ x: 0, y: 0, add: false });
 
-    // 😊 SUNNY BEACH – yellow smiley
+    //smiley face - sunny beach
     gfx.clear();
     gfx.fillStyle(0xffeb3b, 1);
     gfx.fillCircle(16, 16, 16);
@@ -85,7 +84,8 @@ export default class BootScene extends Phaser.Scene {
     gfx.strokePath();
     gfx.generateTexture("hint_smile", 32, 32);
 
-    // 😱 DINO – pale face with open mouth
+
+    //scary face - dino 
     gfx.clear();
     gfx.fillStyle(0xfff3e0, 1);
     gfx.fillCircle(16, 16, 16);
@@ -95,7 +95,8 @@ export default class BootScene extends Phaser.Scene {
     gfx.fillRect(13, 18, 6, 7); // mouth
     gfx.generateTexture("hint_scary", 32, 32);
 
-    // 👽 SPACE – green alien with three eyes
+
+    //alien face - space
     gfx.clear();
     gfx.fillStyle(0x8bc34a, 1);
     gfx.fillCircle(16, 16, 16);

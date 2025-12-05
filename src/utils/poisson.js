@@ -1,7 +1,4 @@
-// src/utils/poisson.js
 
-// Very simple Poisson-like sampler: repeatedly sample random points and keep
-// only those that are at least minDistance from existing points.
 export function generatePoissonPoints(
   width,
   height,

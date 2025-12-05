@@ -1,4 +1,3 @@
-// src/scenes/MenuScene.js
 import { getRandomTheme } from "../data/themes.js";
 
 export default class MenuScene extends Phaser.Scene {

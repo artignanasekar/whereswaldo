@@ -1,5 +1,3 @@
-// src/data/themes.js
-
 const targetRange = (min, max) => ({ min, max });
 
 export const THEMES = [
@@ -10,11 +8,11 @@ export const THEMES = [
     groundColor: 0xfff1c1,
     worldWidth: 2400,
     worldHeight: 1400,
-    minDistance: 55,          // was 70 – slightly closer spacing
-    decorCount: 220,          // 🔼 more objects
+    minDistance: 55,          
+    decorCount: 220,         
     targetRange: targetRange(2, 4),
     timeLimit: 90,
-    hintTextureKey: "hint_smile",   // 🔹 NEW
+    hintTextureKey: "hint_smile",   
     objects: [
       {
         key: "beach_umbrella",
@@ -61,10 +59,10 @@ export const THEMES = [
     worldWidth: 2400,
     worldHeight: 1400,
     minDistance: 55,
-    decorCount: 200,          // 🔼 more objects
+    decorCount: 200,         
     targetRange: targetRange(3, 5),
     timeLimit: 90,
-    hintTextureKey: "hint_scary",   // 🔹 NEW
+    hintTextureKey: "hint_scary",   
     objects: [
       {
         key: "museum_pedestal",
@@ -111,10 +109,10 @@ export const THEMES = [
     worldWidth: 2600,
     worldHeight: 1500,
     minDistance: 55,
-    decorCount: 240,          // 🔼 more objects
+    decorCount: 240,          
     targetRange: targetRange(3, 5),
     timeLimit: 100,
-    hintTextureKey: "hint_alien",   // 🔹 NEW
+    hintTextureKey: "hint_alien",  
     objects: [
       {
         key: "space_ship",
